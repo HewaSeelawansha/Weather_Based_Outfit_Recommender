@@ -1,0 +1,9 @@
+temperature
+season_fall
+season_spring
+season_summer
+season_winter
+weather_condition_cold
+weather_condition_hot
+weather_condition_rain
+weather_condition_snow
