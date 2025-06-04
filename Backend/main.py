@@ -169,7 +169,7 @@ def generate_fallback_recommendations(temp: float, season: str, condition: str) 
     recommendations = {}
     
     # Temperature in Celsius for calculations
-    temp_c = (temp - 32) * 5/9 if temp > 50 else temp  # Assume Fahrenheit if > 50
+    temp_c = (temp - 32) * 5/9 if temp > 50 else temp  
     
     # Outerwear recommendation
     outerwear_needed = temp_c < 15 or condition in ['rain', 'snow', 'cold']
@@ -328,9 +328,9 @@ def determine_weather_condition(temp_c: float, condition_text: str, humidity: fl
         return "snow"
     
     # Temperature-based conditions
-    if temp_c <= 10:  # 50°F
+    if temp_c <= 10: 
         return "cold"
-    elif temp_c >= 27:  # 80°F
+    elif temp_c >= 27:  
         return "hot"
     else:
         return "mild"
